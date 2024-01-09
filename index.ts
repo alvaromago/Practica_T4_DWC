@@ -114,7 +114,12 @@ module PracticaT4 {
         }
     
         mostrar() {
-            document.write(`Yo, ${this.nombre} ${this.apellido}, enseño cursos de:\n${this.mostrarListaCursos()}` )
+            console.log(`Yo, ${this.nombre} ${this.apellido}, enseño cursos de:\n${this.mostrarListaCursos()}`)
         }
     }
+
+    let curso1 = new Curso("Java");
+    let curso2 = new Curso("JavaScript");
+    let formador1 = new Formador("Álvaro", "Martín", "Masculino", 22, 178, 70, [curso1, curso2]);
+    formador1.mostrar();
 }
